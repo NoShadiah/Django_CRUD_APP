@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+    <title>add recipe</title>
+</head>
+<body>
+    {%include "./mystyles.html"%}
+    <form action="/myrecipes/addRecipe" method="POST">
+        
+        {%csrf_token%}
+        <label for="title">Title:</label>
+        <input type="text" name="title" placeholder="recipe ttle e.g Grilled chicken"/><br>
+        <label for="description">Description:</label>
+        <textarea name="description" placeholder="describe your recipe"></textarea><br>
+        <input type="submit" value="Add recipe" id="add"> <input type="reset" value="reset" id="Reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{static 'styles.css'}"> -->
+    <title>Recipes at a glance</title>
+    {%include "./mystyles.html"%}
+</head>
+<body id="landing">
+    
+    <h1 style="z-index: 2; margin-top: 10%;">RECIPES AT A GLANCE</h1>
+    <p id="only" style="z-index: 2;">Welcome to the Home of recipes</p>{%load static%}<img src="{% static "cookingrecipe/media/img2.jpg" %}" alt="bgimage" style="z-index: 0;height: 50%; margin-top: 10%; " >
+    
+    <span style="z-index: 2;">Check out our recipes</span><br><br><br>
+    <button style="width: 100px; z-index: 2;" ><a href="/myrecipes/">Recipes</a></button>
+</body>
+</html>

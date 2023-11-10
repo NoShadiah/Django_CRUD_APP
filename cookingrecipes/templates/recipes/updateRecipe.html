@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+    <title>Update {{details.title}}</title>
+</head>
+<body>
+    <h1 style="padding-top: 20px;">Updating the details of {{details.title}}</h1>
+    {%include "./mystyles.html"%}
+    <form action="/myrecipes/updateRecipe/{{details.id}}" method="POST">
+        
+        {%csrf_token%}
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" value={{details.title}}/><br>
+        <label for="description">Description:</label><br>
+        <textarea name="description">{{details.description}}</textarea><br>
+        <input type="submit" value="Update recipe" id="update"> <input type="reset" value="reset" id="Reset">
+    </form>
+</body>
+</html>

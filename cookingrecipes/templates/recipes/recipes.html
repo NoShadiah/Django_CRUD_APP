@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+    <title>Our recipes</title>
+</head>
+<body>
+    
+    {%include "./mystyles.html"%}
+    <h1>Recently added recipes</h1> 
+    <table style="text-align: justify; margin-left: 10%; ">
+        {%for recipe in myRecipes%}
+            <tr >
+                <td style="border-bottom: 2px solid white; "><h3 style="padding-right: 20px; margin-left: 20px;">{{recipe.title}}   </h3></td><td style="border-bottom: 2px solid white;"><button style="background-color: greenyellow; width: 100px;"><a href={{recipe.id}} >View Recipe</a></button></td>
+            </tr>
+            
+        {%endfor%}
+    </table><br><br>
+    <button style="background-color: rgb(255, 255, 255); width: 100px;"><a href="/myrecipes/addRecipe" >Add <b>+</b></a></button> <button style="background-color: rgb(0, 255, 242); width: 100px;"><a href="/">Home</a></button>  
+    
+</body>
+</html>
