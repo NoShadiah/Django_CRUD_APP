@@ -26,7 +26,11 @@ manage.py: A command-line utility that lets you interact with this Django projec
 4. Run the application - py manage.py runserver
 With this recipe application, you can add, read update and delete 
 
+**Landing page**
 ![recipe](https://github.com/NoShadiah/Django_first-app/assets/107610642/5c95d069-6704-431a-97b6-46470d15b1ab)
+**All recipes page**
 ![recipes](https://github.com/NoShadiah/Django_first-app/assets/107610642/30c36261-4f36-4b7a-8841-de3a58aba446)
+**Adding a recipe**
 ![add](https://github.com/NoShadiah/Django_first-app/assets/107610642/73c28c13-c92d-4eda-990e-254104acd993)
+**Reading a recipe**
 ![read](https://github.com/NoShadiah/Django_first-app/assets/107610642/1d3ddd04-ca5c-4211-9116-0977e4aabdd5)
